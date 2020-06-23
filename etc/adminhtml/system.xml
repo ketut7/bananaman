@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2020 PT Kemana Teknologi Solusi. All rights reserved.
+ * http://www.kemana.com
+ */
+
+/**
+ * @category Kemana
+ * @package  Kemana_Categoriesenhanced
+ * @license  Proprietary
+ *
+ * @author   Gihan Kanchana <gkanchana@kemana.com>
+ */
+
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="kemana" translate="label" sortOrder="200">
+            <label>kemana</label>
+        </tab>
+        <section id="kemana_categoriesenhanced" translate="label" type="text" sortOrder="42" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Categories Enhanced</label>
+            <tab>kemana</tab>
+            <resource>Kemana_Categoriesenhanced::categoriesenhanced</resource>
+            <group id="settings" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Categories Enhanced Settings</label>
+                <field id="config_categoriesenhanced_status" translate="label" type="select" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

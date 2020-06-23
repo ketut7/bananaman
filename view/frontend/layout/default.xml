@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2020 PT Kemana Teknologi Solusi. All rights reserved.
+ * http://www.kemana.com
+ */
+
+/**
+ * @category Kemana
+ * @package  Kemana_Categoriesenhanced
+ * @license  Proprietary
+ *
+ * @author   Gihan Kanchana <gkanchana@kemana.com>
+ */
+-->
+
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+	<head>
+		<link src="Kemana_Categoriesenhanced::css/megamenu.css"/>
+		<link src="Kemana_Categoriesenhanced::js/megamenu.js"/>
+	</head>
+    <body>
+        <referenceBlock name="catalog.topnav">
+			<action method="setTemplate">
+				<argument name="template" xsi:type="string">Kemana_Categoriesenhanced::html/megamenu.phtml</argument>
+			</action>
+        </referenceBlock>
+		<referenceBlock name="sticky.catalog.topnav">
+			<action method="setTemplate">
+				<argument name="template" xsi:type="string">Kemana_Categoriesenhanced::html/megamenu_sticky.phtml</argument>
+			</action>
+        </referenceBlock>
+    </body>
+</page>

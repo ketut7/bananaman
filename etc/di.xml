@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2020 PT Kemana Teknologi Solusi. All rights reserved.
+ * http://www.kemana.com
+ */
+
+/**
+ * @category Kemana
+ * @package  Kemana_Categoriesenhanced
+ * @license  Proprietary
+ *
+ * @author   Gihan Kanchana <gkanchana@kemana.com>
+ */
+
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../lib/internal/Magento/Framework/ObjectManager/etc/config.xsd">
+   <preference for="Magento\Theme\Block\Html\Topmenu" type="Kemana\Categoriesenhanced\Block\Html\KemanaTopmenu" />
+</config>

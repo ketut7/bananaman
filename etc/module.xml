@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2020 PT Kemana Teknologi Solusi. All rights reserved.
+ * http://www.kemana.com
+ */
+
+/**
+ * @category Kemana
+ * @package  Kemana_Categoriesenhanced
+ * @license  Proprietary
+ *
+ * @author   Gihan Kanchana <gkanchana@kemana.com>
+ */
+
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <module name="Kemana_Categoriesenhanced" setup_version="1.0.0">
+        <sequence>
+            <module name="Magento_Theme"/>
+        </sequence>
+    </module>
+</config>

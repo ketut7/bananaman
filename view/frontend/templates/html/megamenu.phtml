@@ -1,0 +1,36 @@
+<?php
+/**
+ * Copyright © 2020 PT Kemana Teknologi Solusi. All rights reserved.
+ * http://www.kemana.com
+ */
+
+/**
+ * @category Kemana
+ * @package  Kemana_Categoriesenhanced
+ * @license  Proprietary
+ *
+ * @author   Gihan Kanchana <gkanchana@kemana.com>
+ */
+?>
+<?php
+/**
+ * Top menu for store
+ *
+ * @see \Magento\Theme\Block\Html\Topmenu
+ */
+?>
+<?php
+$columnsLimit = $block->getColumnsLimit() ?: 0;
+$_menu = $block->getHtml('level-top', 'submenu', $columnsLimit);
+$menuStatus = $this->helper('Kemana\Categoriesenhanced\Helper\Data')->getConfig('kemana_categoriesenhanced/settings/config_categoriesenhanced_status');
+
+?>
+<nav class="navbar navbar-default navigation"<?php if($menuStatus != 0 ): ?> id="megamenu"<?php endif; ?>>
+	<span data-action="toggle-nav" class="action nav-toggle"><i class="fa fa-bars"></i><span><?= /* @escapeNotVerified */ __('Menu') ?></span></span>
+	<div class="collapse topmenu navbar-collapse <?php if($menuStatus != 0 ): ?> megamenu"<?php endif; ?> ">
+		<ul class="nav topmenu navbar-nav" id="nav"<?php if($menuStatus == 0): ?> data-mage-init='{"menu":{"responsive":true, "expanded":true, "delay": 0, "position":{"my":"left top","at":"left bottom"}}}'<?php endif; ?>>
+			<?= /* @escapeNotVerified */ $_menu ?>
+			<?= /* @escapeNotVerified */ $block->getChildHtml() ?>
+		</ul>
+	</div>
+</nav>
